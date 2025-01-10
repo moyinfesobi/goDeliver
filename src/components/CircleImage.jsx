@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
+//reuseable circle
 const CircleImage = ({ src, alt }) => {
   return (
     <p className="w-[56px] h-[56px] rounded-full border border-black flex items-center justify-center">
