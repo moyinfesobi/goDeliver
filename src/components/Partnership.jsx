@@ -3,45 +3,50 @@ import Bro from "../assets/bro.svg";
 
 const Partnership = () => {
   return (
-    <div className="p-20 grid grid-cols-6">
-      <div className="col-span-3 w-[521px]">
-        <p className="text-godeliver-secondary-black font-semibold text-4xl ">
-          Partner with GoDeliver
-        </p>
-        <p className="font-inter my-4 text-godeliver-grey">
+    <section className="p-10 md:p-16 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {" "}
+      <div className="space-y-4 md:w-[70%]">
+        {" "}
+        <p className="text-godeliver-secondary-black font-semibold text-2xl md:text-3xl lg:text-4xl">
+          {" "}
+          Partner with GoDeliver{" "}
+        </p>{" "}
+        <p className="font-inter text-godeliver-grey text-sm md:text-base lg:text-lg">
+          {" "}
           Simply complete and submit the form to request a partnership with
           GoDeliver. We respond to all partnership requests within 1 - 30 days.{" "}
-        </p>
-        <p className="font-inter text-godeliver-grey">
-          For press enquires, complaints, feedback and suggestions, please
+        </p>{" "}
+        <p className="font-inter text-godeliver-grey text-sm md:text-base lg:text-lg">
+          {" "}
+          For press inquiries, complaints, feedback, and suggestions, please
           contact us at{" "}
           <span className="text-godeliver-button">
-            {" "}
             contact@fictionallogistics.com
-          </span>
-        </p>
-      </div>
-
-      <div className="col-span-3 bg-white p-10 justify-self-end rounded-3xl font-inter grid gap-6 w-[80%] shadow-md">
+          </span>{" "}
+        </p>{" "}
+      </div>{" "}
+      <div className="bg-white p-6 md:p-8 lg:p-10 rounded-3xl shadow-md space-y-4 md:w-[80%] md:justify-self-end">
+        {" "}
         <input
           type="text"
           placeholder="Your company’s name"
-          className="w-full focus:outline-none border border-[#6C6E79] rounded-[32px] p-3 placeholder-[#46484F]"
-        />
+          className="w-full border border-[#6C6E79] rounded-[32px] p-3 placeholder-[#46484F] focus:outline-none"
+        />{" "}
         <input
           type="text"
           placeholder="Company Email address"
-          className="w-full focus:outline-none border border-[#6C6E79] rounded-[32px] p-3 placeholder-[#46484F]"
-        />
+          className="w-full border border-[#6C6E79] rounded-[32px] p-3 placeholder-[#46484F] focus:outline-none"
+        />{" "}
         <input
           type="text"
           placeholder="Company Website (optional)"
-          className="w-full focus:outline-none border border-[#6C6E79] rounded-[32px] p-3 placeholder-[#46484F]"
-        />
+          className="w-full border border-[#6C6E79] rounded-[32px] p-3 placeholder-[#46484F] focus:outline-none"
+        />{" "}
         <Popup
           trigger={
-            <button className="bg-godeliver-button text-white rounded-full py-3 font-inter font-bold mt-20">
-              Request Partnership
+            <button className="bg-godeliver-button text-white rounded-full py-3 font-bold w-full">
+              {" "}
+              Request Partnership{" "}
             </button>
           }
           contentStyle={{
@@ -57,7 +62,7 @@ const Partnership = () => {
           modal
         >
           {(close) => (
-            <div className="bg-white h-[65vh] w-[40vw] rounded-3xl p-10 flex justify-center">
+            <div className="bg-white h-[65vh] w-[90vw] md:w-[40vw] rounded-3xl p-6  md:p-10 flex justify-center">
               <div>
                 <div className="flex justify-end ">
                   <button
@@ -69,9 +74,9 @@ const Partnership = () => {
                   </button>
                 </div>
                 <div className="place-items-center font-inter text-center">
-                  <img src={Bro} alt="bro" />
-                  <p className="mt-10 font-semibold text-4xl mb-2">
-                    Request Submitted!{" "}
+                  <img src={Bro} alt="bro" className="mx-auto" />
+                  <p className="mt-6 md:mt-10 font-semibold text-2xl md:text-4xl mb-2">
+                    Request Submitted!
                   </p>
                   <p className="text-[#636363]">
                     Your request to partner with GoDeliver has been submitted.
@@ -81,9 +86,9 @@ const Partnership = () => {
               </div>
             </div>
           )}
-        </Popup>
-      </div>
-    </div>
+        </Popup>{" "}
+      </div>{" "}
+    </section>
   );
 };
 

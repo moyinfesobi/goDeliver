@@ -8,7 +8,7 @@ const Button = ({ text, onClick, loading, icon, width, height }) => {
          transition font-bold  focus:outline-none focus:ring-4  active:shadow-2xl space-x-4 ${width} ${height}`}
     >
       {loading ? (
-        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+        <div className="justify-self-center w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
       ) : (
         <>
           {" "}
